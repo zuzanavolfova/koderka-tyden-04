@@ -1,19 +1,50 @@
 /* nejsme vcerejsi, pouzivame moderni box model */
-*, :after, :before { box-sizing: border-box; }
+
+*,
+ :after,
+ :before {
+    box-sizing: border-box;
+}
 
 body {
-	font-family: sans-serif;
+    font-family: sans-serif;
 }
-
 
 .blok {
-  padding: 20px;
+    padding: 20px;
 }
 
-.horni { background-color:#f1c40f ;}
-.prvni { background-color: #2ecc71;}
-.druhy { background-color: #e74c3c;}
-.treti { background-color: #8e44ad;}
+.horni {
+    background-color: #f1c40f;
+}
+
+.prvni {
+    background-color: #2ecc71;
+}
+
+.druhy {
+    background-color: #e74c3c;
+}
+
+.treti {
+    background-color: #8e44ad;
+}
+
 
 /* ---------------------------------------------------- */
 
+.kontejner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.horni {
+    flex-basis: 100%;
+}
+
+.prvni,
+.druhy,
+.treti {
+    flex-shrink: 1;
+    flex-basis: 33.33%;
+}
