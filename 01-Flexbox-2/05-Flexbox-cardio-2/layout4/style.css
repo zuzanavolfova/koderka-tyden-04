@@ -1,22 +1,60 @@
 /* nejsme vcerejsi, pouzivame moderni box model */
-*, :after, :before { box-sizing: border-box; }
+
+*,
+ :after,
+ :before {
+    box-sizing: border-box;
+}
+
 
 /* barvicky elementů na stránce */
+
 header,
 footer {
-	background: yellowgreen;
+    background: yellowgreen;
+    height: 20vh;
+    flex-grow: 0;
+}
+
+header {
+    flex-grow: 1;
+    width: 80vw;
+    height: 20vh;
 }
 
 aside {
-	background: beige;
+    background: beige;
+    width: 20vw;
 }
 
 nav {
-	background: lightsteelblue;
+    background: lightsteelblue;
+    height: 100vh;
+    flex: 0 0 20vw;
 }
 
+
 /* -------------------------------------------- */
+
+
 /* tady piš svoje CSS */
+
+
 /* -------------------------------------------- */
 
+.kontejner1 {
+    display: flex;
+}
 
+.kontejner2 {
+    display: flex;
+}
+
+.kontejner3 {
+    flex-grow: 1;
+}
+
+article {
+    height: 60vh;
+    width: 60%;
+}
